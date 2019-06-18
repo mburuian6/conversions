@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Coffee Ratios</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="indexstyle.css">
+</head>
+<body>
+	<section>
+		<div class="container" id="jtrn">
+			<div class="jumbotron" >
+				<h4><span id="greeting">Howdy!<span></h4>
+				<h1>Welcome to <span id="systemName">Conversions</span></h1> where we keep your conversions simple.
+				<p><a href="aboutus.html">Learn more</a></p>
+				<br>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div>
+			<p>
+				At CCRAC we believe conversions should be simple and clear. As we further our purpose towards a better planet, we believe in making your life simple, articulate and impressively clear. That is why we came up with Conversions.
+				With Conversions you can transfrom any of your coffee production statistics back and forth as needed in a timely and easily accessible. Oh and hey, we do have our own stats to convert so we do understand first hand behind the hustle of papers and calculators.<i>
+				Timely and accessible is our motto!</i>
+			</p>
+		</div>
+	</section>
+	<section>
+		<div>
+			<p>
+				This is our base of operations in regards to coffee:
+				<ul>
+					<li>7 kilograms of cherry makes one kilogram of parchment</li>
+					<li>1 kilogram of parchment makes 0.8 kilograms of clean coffee</li>
+				</ul>
+				That is our criteria. For any enquiries as to the establishment of these statistical data please contact us <a href="aboutus.html">here</a>.
+			</p>
+		</div>
+	</section>
+    <div>
+    	<form name="myForm" onsubmit="validateForm()" method="GET">
+    		Enter input: <input type="text" name ="input" id="input"> 
+    		<select name="option" id="option">
+    			<option>cherry</option>
+    			<option>parchment</option>
+    			<option>Clean Coffee</option>
+    		</select>
+    		<button type="submit">Convert</button>
+    		
+    	</form>
+    </div>
+    <br>
+    <div>
+    	<p><span id="titleOne">TitleOne</span>: <button id="resultOne" disabled="true">Empty</button></p>
+    	<p><span id="titleTwo">TitleTwo</span>: <button id="resultTwo" disabled="true">Empty</button></p>
+    </div>
+    <div>
+    	<p id="error"></p>
+    </div>
+    <hr>
+    Date: <span id="date"></span>
+</body>
+<script type="text/javascript" src="indexjs.js"></script>
+</html>
